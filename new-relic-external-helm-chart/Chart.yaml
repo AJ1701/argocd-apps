@@ -1,5 +1,6 @@
 name: new-relic-external-helm-chart
 version: 0.0.1
+apiVersion: v3
 
 dependencies:
 - name: newrelic-infrastructure
