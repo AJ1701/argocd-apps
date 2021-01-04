@@ -1,3 +1,4 @@
-licenseKey: mykey
-cluster: crc
-config.custom_attributes.cluster: crc
+new-relic-external-helm-chart:
+  licenseKey: mykey
+  cluster: crc
+  config.custom_attributes.cluster: crc
