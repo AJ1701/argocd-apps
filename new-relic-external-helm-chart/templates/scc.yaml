@@ -30,4 +30,4 @@ volumes:
   - projected
   - secret
 users:
-  - system:serviceaccount:new-relic:new-relic-newrelic-infrastructure
+  - system:serviceaccount:new-relic:newrelic-infrastructure
