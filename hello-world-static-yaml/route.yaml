@@ -1,7 +1,7 @@
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
-  name: example
+  name: hello-world
   namespace: hello-world
 spec:
   to:
