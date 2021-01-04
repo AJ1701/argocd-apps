@@ -41,3 +41,6 @@ Thumbs.db
 **/charts/*.tgz
 requirements.lock
 .history
+
+# Sensitive files
+*.password.yaml
