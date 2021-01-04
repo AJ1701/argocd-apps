@@ -1,0 +1,4 @@
+dependencies:
+- name: newrelic/newrelic-infrastructure
+  #version: 5.0.2
+  repository: https://helm-charts.newrelic.com
