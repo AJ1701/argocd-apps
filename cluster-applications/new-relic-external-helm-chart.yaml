@@ -10,7 +10,6 @@ spec:
     targetRevision: main
     path: new-relic-external-helm-chart
     helm:
-      releaseName: new-relic
       valueFiles:
         - crc-values.yaml
   destination:
