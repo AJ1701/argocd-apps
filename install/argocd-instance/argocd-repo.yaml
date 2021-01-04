@@ -9,9 +9,3 @@ metadata:
 data:
   repositories: |
     - url: https://github.com/AJ1701/argocd-demo-dev
-      passwordSecret:
-        name: github-token
-        key: password
-      usernameSecret:
-        name: github-token
-        key: username
