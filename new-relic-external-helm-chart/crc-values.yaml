@@ -1,9 +1,8 @@
 #https://docs.newrelic.com/docs/integrations/kubernetes-integration/installation/install-kubernetes-integration-using-helm
 
 newrelic-infrastructure:
-  licenseKey: mykey
-  #customSecretName: #name of the secret with the license
-  #customSecretLicenseKey: #key in the secret
+  customSecretName: new-relic-license #name of the secret with the license
+  customSecretLicenseKey: license-key #key in the secret
   cluster: crc
   config.custom_attributes.cluster: crc
   privileged: true
