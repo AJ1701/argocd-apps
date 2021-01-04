@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/AJ1701/interview-demo-dev
+    repoURL: https://github.com/AJ1701/argocd-demo-dev
     targetRevision: main
     path: hello-world
   destination:
