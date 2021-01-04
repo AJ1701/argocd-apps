@@ -1,6 +1,7 @@
 name: new-relic-external-helm-chart
+version: 0.0.1
 
 dependencies:
-- name: newrelic/newrelic-infrastructure
+- name: newrelic-infrastructure
   version: 2.0.1
   repository: https://helm-charts.newrelic.com

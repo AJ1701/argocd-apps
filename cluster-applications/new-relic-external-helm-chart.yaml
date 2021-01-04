@@ -1,24 +1,23 @@
-# apiVersion: argoproj.io/v1alpha1
-# kind: Application
-# metadata:
-#   name: new-relic-external-helm-chart
-#   namespace: argocd #Where ArgoCD lives
-# spec:
-#   project: default
-#   source:
-#     repoURL: https://github.com/AJ1701/argocd-demo-dev
-#     targetRevision: main
-#     path: new-relic-external-helm-chart
-#     helm:
-#       fileParameters:
-#         - name: crc-values.yaml
-#           #path: new-relic-external-helm-chart
-#   destination:
-#     server: https://kubernetes.default.svc
-#     namespace: new-relic #Destination of the apps
-#   syncPolicy:
-#     automated:
-#       prune: false
-#       selfHeal: false
-#     syncOptions:
-#       - CreateNamespace=true
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: new-relic-external-helm-chart
+  namespace: argocd #Where ArgoCD lives
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/AJ1701/argocd-demo-dev
+    targetRevision: main
+    path: new-relic-external-helm-chart
+    helm:
+      valueFiles:
+        - crc-values.yaml
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: new-relic #Destination of the apps
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: false
+    syncOptions:
+      - CreateNamespace=true
