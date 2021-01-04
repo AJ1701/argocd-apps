@@ -1,1 +1,3 @@
-token: test
+licenseKey: mykey
+cluster: crc
+config.custom_attributes.cluster: crc
