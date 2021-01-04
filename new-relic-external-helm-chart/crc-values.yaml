@@ -7,5 +7,5 @@ newrelic-infrastructure:
   config.custom_attributes.cluster: crc
   privileged: true
   rbac.pspEnabled: true
-  serviceaccount.name: newrelic-infrastructure
+  serviceAccount.name: newrelic-infrastructure
   #newrelic-infrastructure.config.proxy: http://10.0.0.1
