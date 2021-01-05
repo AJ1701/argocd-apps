@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: new-relic-external-helm-chart
+  name: new-relic
   namespace: argocd #Where ArgoCD lives
 spec:
   project: default
