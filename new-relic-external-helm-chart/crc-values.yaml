@@ -16,4 +16,4 @@ kube-state-metrics:
   rbac.pspEnabled: true
   serviceAccount: 
     create: true
-    name: newrelic-infrastructure
+    name: kube-state-metrics

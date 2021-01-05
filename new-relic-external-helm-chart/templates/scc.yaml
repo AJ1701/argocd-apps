@@ -31,3 +31,4 @@ volumes:
   - secret
 users:
   - system:serviceaccount:new-relic:newrelic-infrastructure
+  - system:serviceaccount:new-relic:kube-state-metrics
