@@ -10,7 +10,7 @@ newrelic-infrastructure:
   serviceAccount: 
     create: true
     name: newrelic-infrastructure
-  newrelic-infrastructure.config.proxy: http://10.0.0.1
+  #newrelic-infrastructure.config.proxy: http://10.0.0.1
 
 kube-state-metrics:
   rbac.pspEnabled: true
