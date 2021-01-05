@@ -6,7 +6,7 @@ metadata:
 spec:
   identityProviders:
   - name: githubidp 
-    mappingMethod: claim 
+    mappingMethod: lookup 
     type: GitHub
     github:
       clientID: {{ .Values.clientID }}
