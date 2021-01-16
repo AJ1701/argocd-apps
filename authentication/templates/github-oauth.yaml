@@ -5,7 +5,7 @@ metadata:
   name: cluster
 spec:
   identityProviders:
-  - name: GitHub 
+  - name: {{ .Values.githubAuth.identityName }} 
     mappingMethod: claim
     type: GitHub
     github:
