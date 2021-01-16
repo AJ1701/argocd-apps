@@ -6,3 +6,5 @@ namespace: group-sync-operator
 group-sync-operator:
   serviceAccount:
     name: "group-sync-operator"
+  image:
+    tag: v0.0.9
