@@ -9,9 +9,9 @@ spec:
     repoURL: https://github.com/AJ1701/argocd-demo-dev
     targetRevision: main
     path: group-sync-operator
-    helm:
-      valueFiles:
-        - crc-values.yaml
+    # helm:
+    #   valueFiles:
+    #     - crc-values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: group-sync-operator #Destination of the apps
