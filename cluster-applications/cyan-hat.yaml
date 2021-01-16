@@ -9,6 +9,9 @@ spec:
     repoURL: https://github.com/AJ1701/argocd-demo-dev
     targetRevision: main
     path:  cyan-hat 
+    helm:
+      valueFiles:
+        - crc-values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: openshift-config #Destination of the apps

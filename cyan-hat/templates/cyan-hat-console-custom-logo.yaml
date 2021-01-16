@@ -1,0 +1,9 @@
+{{ range .Values.instances }}
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: {{ .configMapName }}
+  namespace: {{ .cyan-hat-console-custom-logo }}
+binaryData:
+  cyan-hat-openshift-container-platform.png: {{ .Values.custom_logo }}
+{{ end }}
