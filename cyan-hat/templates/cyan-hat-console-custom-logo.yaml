@@ -6,5 +6,5 @@ metadata:
   namespace: {{ .namespace }}
 binaryData:
   cyan-hat-openshift-container-platform.png: >-
-    {{ $.Files.Get "images/cyan-hat-openshift-container-platform.png" | b64enc | indent 4 }}
+    {{ $.Files.Get $.custom_logo_path | b64enc | indent 4 }}
 {{- end }}

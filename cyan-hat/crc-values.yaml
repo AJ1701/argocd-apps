@@ -1,6 +1,6 @@
-custom_logo_path: images/cyan-hat-openshift-container-platform.png
+custom_logo_name: cyan-hat-openshift-container-platform.png
 instances:
   - namespace: openshift-config
     configMapName: cyan-hat-console-custom-logo
-  - namespace: openshift-console
-    configMapName: custom-logo
+  # - namespace: openshift-console
+  #   configMapName: custom-logo
