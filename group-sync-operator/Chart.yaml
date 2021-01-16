@@ -1,0 +1,8 @@
+name: group-sync-operator
+version: 0.0.1
+apiVersion: v2
+
+dependencies:
+- name: group-sync-operator
+  version: 0.0.9
+  repository: https://redhat-cop.github.io/group-sync-operator

@@ -1,0 +1,16 @@
+#https://docs.openshift.com/container-platform/4.6/authentication/identity_providers/configuring-github-identity-provider.html
+apiVersion: config.openshift.io/v1
+kind: OAuth
+metadata:
+  name: cluster
+spec:
+  identityProviders:
+  - name: GitHub 
+    mappingMethod: claim
+    type: GitHub
+    github:
+      clientID: {{ .Values.clientID }}
+      clientSecret: 
+        name: {{ .Values.clientSecretName }}
+      organizations: 
+      - {{ .Values.organizationName }}
