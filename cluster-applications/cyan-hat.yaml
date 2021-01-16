@@ -16,10 +16,3 @@ spec:
     automated:
       prune: true
       selfHeal: false
-  ignoreDifferences:
-  - group: apps
-    kind: ConfigMap
-    name: custom-logo
-    namespace: openshift-console
-    #jsonPointers:
-    #- /spec/replicas
