@@ -10,3 +10,14 @@ operators:
       sourceNamespace: openshift-marketplace
     operatorGroupNamespaces: 
       - group-sync-operator
+  - name: argocd
+    metadata:
+      name: argocd-operator
+      namespace: argocd
+    subscription: 
+      channel: alpha
+      name: argocd-operator
+      source: community-operators
+      sourceNamespace: openshift-marketplace
+    operatorGroupNamespaces: 
+      - argocd
