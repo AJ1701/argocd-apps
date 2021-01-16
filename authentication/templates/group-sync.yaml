@@ -9,5 +9,5 @@ spec:
       github:
         credentialsSecret:
           name: {{ .Values.githubAuth.clientSecretName }}
-          namespace: {{ .Values.githubAuth.clientSecretNamespace }}
+          namespace: group-sync-operator
         organization: {{ .Values.githubAuth.organizationName }}
