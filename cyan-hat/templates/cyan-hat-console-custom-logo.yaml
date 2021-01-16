@@ -1,9 +1,10 @@
-{{ range .Values.instances }}
+{{- range .Values.instances }}
 kind: ConfigMap
 apiVersion: v1
 metadata:
   name: {{ .configMapName }}
   namespace: {{ .namespace }}
 binaryData:
-  cyan-hat-openshift-container-platform.png: {{ .Values.custom_logo }}
-{{ end }}
+  cyan-hat-openshift-container-platform.png: >-
+    {{ $.Files.Get "images/cyan-hat-openshift-container-platform.png" | b64enc | indent 4 }}
+{{- end }}
