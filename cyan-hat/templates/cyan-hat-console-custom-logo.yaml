@@ -3,7 +3,7 @@ kind: ConfigMap
 apiVersion: v1
 metadata:
   name: {{ .configMapName }}
-  namespace: {{ .cyan-hat-console-custom-logo }}
+  namespace: {{ .namespace }}
 binaryData:
   cyan-hat-openshift-container-platform.png: {{ .Values.custom_logo }}
 {{ end }}
