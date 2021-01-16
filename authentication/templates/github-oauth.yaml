@@ -11,6 +11,6 @@ spec:
     github:
       clientID: {{ .Values.githubAuth.clientID }}
       clientSecret: 
-        name: {{ .Values.githubAuth.clientID }}
+        name: {{ .Values.githubAuth.clientSecretName }}
       organizations: 
-      - {{ .Values.githubAuth.clientID }}
+      - {{ .Values.githubAuth.organizationName }}
