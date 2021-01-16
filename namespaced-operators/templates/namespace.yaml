@@ -1,0 +1,9 @@
+{{- range $operators := .Values.operators }}
+{{ if $operators.createNamespace }}
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: {{ $operators.metadata.operatorName }}
+{{ end }}
+{{- end }}

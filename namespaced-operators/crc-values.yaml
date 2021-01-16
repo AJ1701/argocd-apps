@@ -10,6 +10,7 @@ operators:
       sourceNamespace: openshift-marketplace
     operatorGroupNamespaces: 
       - group-sync-operator
+    createNamespace: true
 
   - name: argocd
     metadata:
@@ -22,3 +23,4 @@ operators:
       sourceNamespace: openshift-marketplace
     operatorGroupNamespaces: 
       - argocd
+    createNamespace: false
