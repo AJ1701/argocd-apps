@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/AJ1701/argocd-demo-dev
     targetRevision: main
-    path: new-relic-external-helm-chart-borked
+    path: new-relic-external-helm-chart
     helm:
       valueFiles:
         - crc-values.yaml
