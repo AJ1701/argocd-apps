@@ -4,10 +4,10 @@ apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: cluster-admin-accounts
 subjects:
-{{- range $operators.operatorGroupNamespaces }}
+{{- range .Values.cluster_admin_accounts }}
   - kind: User
-  apiGroup: rbac.authorization.k8s.io
-  name: {{ . }}
+    apiGroup: rbac.authorization.k8s.io
+    name: {{ . }}
 {{- end }}
 roleRef:
   apiGroup: rbac.authorization.k8s.io
