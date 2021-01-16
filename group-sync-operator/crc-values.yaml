@@ -2,4 +2,8 @@ clientID: ffbdf89185dabf5febaf
 clientSecretName: github-oauth-credentials
 organizationName: aj1701-demo-org
 
-#group-sync-operator: ""
+group-sync-operator: 
+  serviceAccount:
+    create: true
+    name: "group-sync-operator"
+  
