@@ -24,3 +24,16 @@ operators:
     operatorGroupNamespaces: 
       - argocd
     createNamespace: false
+
+  - name: container-security-operator
+    metadata:
+      operatorName: container-security-operator
+      namespace: openshift-operators
+    subscription: 
+      channel: alpha
+      name: container-security-operator
+      source: redhat-operators
+      sourceNamespace: openshift-marketplace
+    operatorGroupNamespaces: 
+      - openshift-operators
+    createNamespace: false
