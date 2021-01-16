@@ -1,0 +1,10 @@
+apiVersion: operator.openshift.io/v1
+kind: Console
+metadata:
+  name: cluster
+spec:
+  customization:
+    customLogoFile:
+      key: cyan-hat-openshift-container-platform.png
+      name: cyan-hat-console-custom-logo
+    customProductName: Cyan Hat OpenShift Container Platform
