@@ -9,8 +9,8 @@ spec:
     mappingMethod: claim
     type: GitHub
     github:
-      clientID: {{ .Values.clientID }}
+      clientID: {{ .Values.githubAuth.clientID }}
       clientSecret: 
-        name: {{ .Values.clientSecretName }}
+        name: {{ .Values.githubAuth.clientID }}
       organizations: 
-      - {{ .Values.organizationName }}
+      - {{ .Values.githubAuth.clientID }}

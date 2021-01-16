@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: github-oauth-authentication
+  name: authentication
   namespace: argocd #Where ArgoCD lives
 spec:
   project: default
   source:
     repoURL: https://github.com/AJ1701/argocd-demo-dev
     targetRevision: main
-    path: github-oauth-authentication
+    path: authentication
     helm:
       valueFiles:
         - crc-values.yaml
