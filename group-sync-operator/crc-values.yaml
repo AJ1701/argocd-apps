@@ -1,5 +1,8 @@
 serviceAccount:
-  create: true
   name: "group-sync-operator"
 
 namespace: group-sync-operator
+
+group-sync-operator:
+  serviceAccount:
+    name: "group-sync-operator"
