@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cyan-hat
+  namespace: argocd #Where ArgoCD lives
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/AJ1701/argocd-demo-dev
+    targetRevision: main
+    path:  cyan-hat 
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: openshift-config #Destination of the apps
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: false
