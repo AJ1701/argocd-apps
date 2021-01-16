@@ -5,7 +5,7 @@ metadata:
   name: cluster
 spec:
   identityProviders:
-  - name: githubidp 
+  - name: GitHub 
     mappingMethod: lookup 
     type: GitHub
     github:
