@@ -1,5 +1,0 @@
-name: group-sync-operator-chart
-version: 0.0.1
-apiVersion: v2
-
-#https://github.com/redhat-cop/group-sync-operator
