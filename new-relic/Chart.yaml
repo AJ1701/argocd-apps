@@ -1,4 +1,4 @@
-name: new-relic-external-helm-chart
+name: new-relic
 version: 0.0.1
 apiVersion: v2
 
