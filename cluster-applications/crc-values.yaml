@@ -3,16 +3,6 @@ git_repo_branch: main
 
 applications:
   - metadata:
-      name: argocd-operator
-      argocdNamespace: argocd
-    helm:
-      valueFiles:
-        - crc-values.yaml
-    syncPolicy:
-      automated: 
-        selfHeal: true
-        prune: true
-  - metadata:
       name: authentication
       argocdNamespace: argocd
     helm:
