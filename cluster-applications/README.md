@@ -1,8 +1,5 @@
 # cluster-applications
 
-## Prerequisites
-- ArgoCD Installed
-
 ## Deploying via App of Apps
 Simply create an ArgoCD application resource in this directory to have ArgoCD deploy your application.
 
