@@ -1,5 +1,9 @@
 # authentication
 
+## Prerequisites
+- Configure [GitHub application on GitHub.com](https://docs.openshift.com/container-platform/4.6/authentication/identity_providers/configuring-github-identity-provider.html#identity-provider-registering-github_configuring-github-identity-provider)
+- [Create a secret for the client secret](https://docs.openshift.com/container-platform/4.6/authentication/identity_providers/configuring-github-identity-provider.html#identity-provider-creating-secret_configuring-github-identity-provider)
+
 ## Inputs
 |            Inpu       |     Type       | Description                                    |
 |-----------------------|----------------|------------------------------------------------|
