@@ -9,6 +9,9 @@ spec:
     repoURL: https://github.com/AJ1701/argocd-applications-dev
     targetRevision: main
     path: cluster-applications
+    helm:
+      valueFiles:
+        - crc-values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd #Destination of the apps
@@ -16,6 +19,3 @@ spec:
     automated: 
       selfHeal: true
       prune: true
-  helm:
-    valueFiles:
-      - crc-values.yaml

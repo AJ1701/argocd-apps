@@ -9,14 +9,14 @@ spec:
   source:
     repoURL: {{ $.Values.git_repo_url }} 
     targetRevision: {{ $.Values.git_repo_branch }} 
-    path: {{ $application.metadata.name }}
+    path: {{ $application.metadata.name }}{{ if $application.helm }}
+    helm:
+    {{- range $key, $val := $application.helm }}
+      {{ $key }}: {{ $val }}
+    {{- end }}{{ end }}
   destination:
     server: https://kubernetes.default.svc
-    namespace: {{ $application.metadata.argocdNamespace }}{{ if $application.helm }}
-  helm:
-  {{- range $key, $val := $application.helm }}
-    {{ $key }}: {{ $val }}
-  {{- end }}{{ end }}{{ if $application.syncPolicy }}
+    namespace: {{ $application.metadata.argocdNamespace }}{{ if $application.syncPolicy }}
   syncPolicy:
   {{- range $key, $val := $application.syncPolicy }}
     {{ $key }}: {{ $val }}
