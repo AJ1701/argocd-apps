@@ -18,6 +18,7 @@ operators:
       namespace: argocd
     subscription: 
       channel: alpha
+      installPlanApproval: Automatic
       name: argocd-operator
       source: community-operators
       sourceNamespace: openshift-marketplace
@@ -38,3 +39,17 @@ operators:
     operatorGroupNamespaces: 
       - openshift-operators
     createNamespace: false
+
+  - name: namespace-configuration-operator
+    metadata:
+      operatorName: namespace-configuration-operator
+      namespace: namespace-configuration-operator
+    subscription: 
+      channel: alpha
+      installPlanApproval: Automatic
+      name: namespace-configuration-operator
+      source: community-operators
+      sourceNamespace: openshift-marketplace
+    operatorGroupNamespaces: 
+      - namespace-configuration-operator
+    createNamespace: true
