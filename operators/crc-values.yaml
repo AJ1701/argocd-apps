@@ -1,17 +1,17 @@
 operators:
 
-  - metadata:
-      operatorName: argocd-operator
-      namespace: argocd
-    subscription: 
-      channel: alpha
-      installPlanApproval: Automatic
-      name: argocd-operator
-      source: community-operators
-      sourceNamespace: openshift-marketplace
-    operatorGroupNamespaces: 
-      - argocd
-    createNamespace: false
+  # - metadata:
+  #     operatorName: argocd-operator
+  #     namespace: argocd
+  #   subscription: 
+  #     channel: alpha
+  #     installPlanApproval: Automatic
+  #     name: argocd-operator
+  #     source: community-operators
+  #     sourceNamespace: openshift-marketplace
+  #   operatorGroupNamespaces: 
+  #     - argocd
+  #   createNamespace: false
 
   - metadata:
       operatorName: container-security-operator
