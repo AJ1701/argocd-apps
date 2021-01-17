@@ -16,9 +16,10 @@ spec:
   helm:
   {{- range $key, $val := $application.helm }}
     {{ $key }}: {{ $val }}
-  {{- end }}{{ end }}
+  {{- end }}{{ end }}{{ if $application.syncPolicy }}
   syncPolicy:
-    automated: 
-      selfHeal: true
-      prune: true
+  {{- range $key, $val := $application.syncPolicy }}
+    {{ $key }}: {{ $val }}
+  {{- end }}
+{{ end }}
 {{- end }}

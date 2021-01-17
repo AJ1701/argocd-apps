@@ -8,6 +8,10 @@ applications:
     helm:
       valueFiles:
         - crc-values.yaml
+    syncPolicy:
+      automated: 
+        selfHeal: true
+        prune: true
   - metadata:
       name: authentication
       argocdNamespace: argocd
