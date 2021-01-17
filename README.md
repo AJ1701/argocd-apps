@@ -1,1 +1,1 @@
-#  cluster-applications 
+#  argocd-applications
