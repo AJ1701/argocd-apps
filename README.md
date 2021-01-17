@@ -1,6 +1,7 @@
 #  argocd-applications
 
 ## Prerequisites
+- Kubernetes cluster
 - ArgoCD installed with elevated privileges
 
 ## Deploying New Applications

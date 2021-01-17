@@ -1,5 +1,8 @@
 # new-relic
 
+## Prerequisites
+A secret with the New Relic license key in the application's namespace
+
 ## newrelic-infrastructure
 See reference documentation at https://docs.newrelic.com/docs/integrations/kubernetes-integration/installation/install-kubernetes-integration-using-helm
 
