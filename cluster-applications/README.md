@@ -1,7 +1,7 @@
 # cluster-applications
 
 ## Deploying via App of Apps
-Simply create an ArgoCD application resource in this directory to have ArgoCD deploy your application.
+Simply create an ArgoCD application resource in this directory to have ArgoCD deploy your application. Create a new directory with the static manifests, helm, kustomize, ksonnet, or jsonnet contained within.
 
 ## Application Resource Documentation
 https://argoproj.github.io/argo-cd/operator-manual/declarative-setup/#applications
