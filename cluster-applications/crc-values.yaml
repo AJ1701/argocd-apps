@@ -8,54 +8,42 @@ applications:
     helm:
       valueFiles:
         - crc-values.yaml
-    syncPolicy:
-      automated: 
-        selfHeal: true
-        prune: true
+    selfHeal: true
+    prune: true
   - metadata:
       name: cluster-admins
       argocdNamespace: argocd
     helm:
       valueFiles:
         - crc-values.yaml
-    syncPolicy:
-      automated: 
-        selfHeal: true
-        prune: true
+    selfHeal: true
+    prune: true
   - metadata:
       name: cyan-hat
       argocdNamespace: argocd
     helm:
       valueFiles:
         - crc-values.yaml
-    syncPolicy:
-      automated: 
-        selfHeal: true
-        prune: true
+    selfHeal: true
+    prune: true
   - metadata:
       name: hello-world
       argocdNamespace: argocd
-    syncPolicy:
-      automated: 
-        selfHeal: true
-        prune: true
+    selfHeal: true
+    prune: true
   - metadata:
       name: new-relic
       argocdNamespace: argocd
     helm:
       valueFiles:
         - crc-values.yaml
-    syncPolicy:
-      automated: 
-        selfHeal: true
-        prune: true
+    selfHeal: true
+    prune: true
   - metadata:
       name: operators
       argocdNamespace: argocd
     helm:
       valueFiles:
         - crc-values.yaml
-    syncPolicy:
-      automated: 
-        selfHeal: true
-        prune: true
+    # selfHeal: true
+    # prune: true

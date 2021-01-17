@@ -17,10 +17,12 @@ spec:
     {{- end }}{{ end }}
   destination:
     server: https://kubernetes.default.svc
-    namespace: {{ $application.metadata.argocdNamespace }}{{ if $application.syncPolicy }}
-  syncPolicy:
-  {{- range $key, $val := $application.syncPolicy }}
-    {{ $key }}: {{ $val }}
-  {{- end }}
-{{ end }}
+    namespace: {{ $application.metadata.argocdNamespace }}
+  syncPolicy: {{if or ($application.selfHeal) ($application.prune) }}
+    automated:
+    {{ if $application.selfHeal }}  selfHeal: {{ $application.selfHeal }}{{ end }}
+    {{ if $application.prune }}  prune: {{ $application.prune }}{{ end }}
+    {{ else }}
+    automated: {}
+    {{- end }}
 {{- end }}
