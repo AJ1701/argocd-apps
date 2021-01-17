@@ -1,0 +1,43 @@
+git_repo_url: https://github.com/AJ1701/argocd-applications-dev
+git_repo_branch: main
+
+applications:
+  - metadata:
+      name: argocd-operator
+      argocdNamespace: argocd
+    helm:
+      valueFiles:
+        - crc-values.yaml
+  - metadata:
+      name: authentication
+      argocdNamespace: argocd
+    helm:
+      valueFiles:
+        - crc-values.yaml
+  - metadata:
+      name: cluster-admins
+      argocdNamespace: argocd
+    helm:
+      valueFiles:
+        - crc-values.yaml
+  - metadata:
+      name: cyan-hat
+      argocdNamespace: argocd
+    helm:
+      valueFiles:
+        - crc-values.yaml
+  - metadata:
+      name: hello-world
+      argocdNamespace: argocd
+  - metadata:
+      name: new-relic
+      argocdNamespace: argocd
+    helm:
+      valueFiles:
+        - crc-values.yaml
+  - metadata:
+      name: operators
+      argocdNamespace: argocd
+    helm:
+      valueFiles:
+        - crc-values.yaml

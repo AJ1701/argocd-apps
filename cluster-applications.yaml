@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/AJ1701/argocd-demo-dev
+    repoURL: https://github.com/AJ1701/argocd-applications-dev
     targetRevision: main
     path: cluster-applications
   destination:
