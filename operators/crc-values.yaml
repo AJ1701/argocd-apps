@@ -1,7 +1,6 @@
 operators:
 
-  - name: argocd
-    metadata:
+  - metadata:
       operatorName: argocd-operator
       namespace: argocd
     subscription: 
@@ -14,8 +13,7 @@ operators:
       - argocd
     createNamespace: false
 
-  - name: container-security-operator
-    metadata:
+  - metadata:
       operatorName: container-security-operator
       namespace: openshift-operators
     subscription: 
@@ -28,8 +26,7 @@ operators:
       - openshift-operators
     createNamespace: false
 
-  - name: namespace-configuration-operator
-    metadata:
+  - metadata:
       operatorName: namespace-configuration-operator
       namespace: namespace-configuration-operator
     subscription: 
@@ -42,8 +39,7 @@ operators:
       - namespace-configuration-operator
     createNamespace: true
 
-  # - name: group-sync-operator
-  #   metadata:
+  # - metadata:
   #     operatorName: group-sync-operator
   #     namespace: group-sync-operator
   #   subscription: 
@@ -55,8 +51,7 @@ operators:
   #     - group-sync-operator
   #   createNamespace: true
 
-  - name: node-problem-detector
-    metadata:
+  - metadata:
       operatorName: node-problem-detector
       namespace: node-problem-detector
     subscription: 
