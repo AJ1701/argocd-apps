@@ -1,4 +1,4 @@
-cluster_admin_groups: cloud-platform-admin
+cluster_admin_group: cloud-platform-admin
 
 cluster_admin_accounts:
   - AJ1701
