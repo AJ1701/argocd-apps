@@ -1,1 +1,1 @@
-# argocd-demo
+#  cluster-applications 
