@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/AJ1701/argocd-demo-dev
     targetRevision: main
-    path: hello-world-static-yaml
+    path: hello-world
   destination:
     server: https://kubernetes.default.svc
     namespace: hello-world #Destination of the apps
