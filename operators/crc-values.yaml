@@ -1,16 +1,4 @@
 operators:
-  # - name: group-sync-operator
-  #   metadata:
-  #     operatorName: group-sync-operator
-  #     namespace: group-sync-operator
-  #   subscription: 
-  #     channel: alpha
-  #     name: group-sync-operator
-  #     source: community-operators
-  #     sourceNamespace: openshift-marketplace
-  #   operatorGroupNamespaces: 
-  #     - group-sync-operator
-  #   createNamespace: true
 
   - name: argocd
     metadata:
@@ -52,4 +40,30 @@ operators:
       sourceNamespace: openshift-marketplace
     operatorGroupNamespaces: 
       - namespace-configuration-operator
+    createNamespace: true
+
+  # - name: group-sync-operator
+  #   metadata:
+  #     operatorName: group-sync-operator
+  #     namespace: group-sync-operator
+  #   subscription: 
+  #     channel: alpha
+  #     name: group-sync-operator
+  #     source: community-operators
+  #     sourceNamespace: openshift-marketplace
+  #   operatorGroupNamespaces: 
+  #     - group-sync-operator
+  #   createNamespace: true
+
+  - name: node-problem-detector
+    metadata:
+      operatorName: node-problem-detector
+      namespace: node-problem-detector
+    subscription: 
+      channel: alpha
+      name: node-problem-detector
+      source: community-operators
+      sourceNamespace: openshift-marketplace
+    operatorGroupNamespaces: 
+      - node-problem-detector
     createNamespace: true
