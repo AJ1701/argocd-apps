@@ -5,12 +5,14 @@ metadata:
   name: cluster
 spec:
   identityProviders:
-  - name: {{ .Values.githubAuth.identityName }} 
+  - name: {{ .Values.identityName }} 
     mappingMethod: claim
     type: GitHub
     github:
-      clientID: {{ .Values.githubAuth.clientID }}
+      clientID: {{ .Values.clientID }}
       clientSecret: 
-        name: {{ .Values.githubAuth.clientSecretName }}
+        name: {{ .Values.clientSecretName }}
       organizations: 
-      - {{ .Values.githubAuth.organizationName }}
+      {{- range $organizations := .Values.gitHubOrganizations }}
+        - {{ . }}
+      {{- end }}

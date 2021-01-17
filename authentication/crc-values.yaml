@@ -1,6 +1,6 @@
-githubAuth:
-  identityName: GitHub
-  clientID: ffbdf89185dabf5febaf
-  clientSecretName: github-oauth-credentials
-  clientSecretNamespace: openshift-config
-  organizationName: aj1701-demo-org
+identityName: GitHub
+clientID: ffbdf89185dabf5febaf
+clientSecretName: github-oauth-credentials
+clientSecretNamespace: openshift-config
+gitHubOrganizations: 
+  - aj1701-demo-org
