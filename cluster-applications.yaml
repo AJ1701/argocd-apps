@@ -16,3 +16,6 @@ spec:
     automated: 
       selfHeal: true
       prune: true
+  helm:
+    valueFiles:
+      - crc-values.yaml
