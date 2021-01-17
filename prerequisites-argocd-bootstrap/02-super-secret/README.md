@@ -1,1 +1,1 @@
-Nothing passwords committed here. Move along.
+No passwords are committed here. Move along.
