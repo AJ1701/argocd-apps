@@ -1,4 +1,4 @@
-git_repo_url: https://github.com/AJ1701/argocd-applications-dev
+git_repo_url: https://github.com/AJ1701/argocd-apps-dev
 git_repo_branch: main
 
 applications:
