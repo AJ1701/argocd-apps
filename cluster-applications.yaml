@@ -9,7 +9,8 @@ spec:
     repoURL: https://github.com/AJ1701/argocd-apps
     targetRevision: main
     path: cluster-applications
-    helm: {}
+    helm: 
+      version: v2
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd #Destination of the apps
