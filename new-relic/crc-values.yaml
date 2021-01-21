@@ -16,8 +16,8 @@ nri-kube-events:
   customSecretName: new-relic-license #name of the secret with the license
   customSecretLicenseKey: license-key #key in the secret
   cluster: crc
-  serviceAccount: 
-    name: new-relic
+  #serviceAccount: 
+  #  name: new-relic
 
 kube-state-metrics:
   rbac.pspEnabled: true
