@@ -17,6 +17,7 @@ nri-kube-events:
   customSecretLicenseKey: license-key #key in the secret
   cluster: crc
   serviceAccount: 
+    create: true
     name: nri-kube-events
 
 kube-state-metrics:
