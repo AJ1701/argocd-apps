@@ -9,15 +9,15 @@ newrelic-infrastructure:
   rbac.pspEnabled: true
   serviceAccount: 
     create: true
-    name: new-relic
+    name: newrelic-infrastructure
   #newrelic-infrastructure.config.proxy: http://10.0.0.1
 
 nri-kube-events:
   customSecretName: new-relic-license #name of the secret with the license
   customSecretLicenseKey: license-key #key in the secret
   cluster: crc
-  #serviceAccount: 
-  #  name: new-relic
+  serviceAccount: 
+    name: nri-kube-events
 
 kube-state-metrics:
   rbac.pspEnabled: true
