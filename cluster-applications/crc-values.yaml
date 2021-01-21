@@ -35,15 +35,15 @@ applications:
     selfHeal: true
     prune: true
     destinationNamespace: hello-world
-  - metadata:
-      name: new-relic
-      argocdNamespace: argocd
-    helm:
-      valueFiles:
-        - crc-values.yaml
-    selfHeal: true
-    prune: true
-    destinationNamespace: new-relic
+#   - metadata:
+#       name: new-relic
+#       argocdNamespace: argocd
+#     helm:
+#       valueFiles:
+#         - crc-values.yaml
+#     selfHeal: true
+#     prune: true
+#     destinationNamespace: new-relic
   - metadata:
       name: operators
       argocdNamespace: argocd
