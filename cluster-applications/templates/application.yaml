@@ -17,7 +17,7 @@ spec:
     {{- end }}{{ end }}
   destination:
     server: https://kubernetes.default.svc
-    namespace: {{ $application.metadata.argocdNamespace }}
+    namespace: {{ $application.destinationNamespace }}
   syncPolicy: {{if or ($application.selfHeal) ($application.prune) }}
     automated:
     {{ if $application.selfHeal }}  selfHeal: {{ $application.selfHeal }}{{ end }}

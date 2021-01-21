@@ -10,6 +10,7 @@ applications:
         - crc-values.yaml
     selfHeal: true
     prune: true
+    destinationNamespace: openshift-config
   - metadata:
       name: cluster-admins
       argocdNamespace: argocd
@@ -18,6 +19,7 @@ applications:
         - crc-values.yaml
     selfHeal: true
     prune: true
+    destinationNamespace: openshift-config
   - metadata:
       name: cyan-hat
       argocdNamespace: argocd
@@ -26,11 +28,13 @@ applications:
         - crc-values.yaml
     selfHeal: true
     prune: true
+    destinationNamespace: openshift-config
   - metadata:
       name: hello-world
       argocdNamespace: argocd
     selfHeal: true
     prune: true
+    destinationNamespace: hello-world
   - metadata:
       name: new-relic
       argocdNamespace: argocd
@@ -39,6 +43,7 @@ applications:
         - crc-values.yaml
     selfHeal: true
     prune: true
+    destinationNamespace: new-relic
   - metadata:
       name: operators
       argocdNamespace: argocd
@@ -47,3 +52,4 @@ applications:
         - crc-values.yaml
     # selfHeal: true
     # prune: true
+    destinationNamespace: openshift-operators
