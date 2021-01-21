@@ -10,7 +10,7 @@ newrelic-infrastructure:
   serviceAccount: 
     create: true
     name: new-relic
-  newrelic-infrastructure.config.proxy: http://10.0.0.1
+  #newrelic-infrastructure.config.proxy: http://10.0.0.1
 
 nri-kube-events:
   customSecretName: new-relic-license #name of the secret with the license
