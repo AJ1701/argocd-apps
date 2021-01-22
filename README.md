@@ -1,4 +1,4 @@
-#  argocd-applications
+#  argocd-apps
 
 ## Prerequisites
 - Kubernetes cluster
